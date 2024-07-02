@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        app:title="Pendaftaran"
+        app:titleTextColor="@color/white" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Nama Siswa" />
+
+    <EditText
+        android:id="@+id/etNISN"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="NISN"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etTanggalLahir"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Tanggal Lahir (dd/mm/yyyy)"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/etNoTelp"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Nomor Telepon"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etRataNilai"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Rata-Rata Nilai"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etSekolah"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:hint="Sekolah Pilihan"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/rgJurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/rbMIPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="MIPA" />
+        <RadioButton
+            android:id="@+id/rbIPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="IPS" />
+        <RadioButton
+            android:id="@+id/rbBahasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Bahasa" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Daftar"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
